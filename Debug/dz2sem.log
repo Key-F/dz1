@@ -1,0 +1,100 @@
+﻿Build started 21.03.2015 15:50:39.
+     1>Project "c:\Users\user\documents\visual studio 2010\Projects\dz2sem\dz2sem.vcxproj" on node 2 (build target(s)).
+     1>InitializeBuildStatus:
+         Creating "Debug\dz2sem.unsuccessfulbuild" because "AlwaysCreate" was specified.
+       ClCompile:
+         D:\vs\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt File.cpp main.cpp
+         main.cpp
+     1>c:\users\user\documents\visual studio 2010\projects\dz2sem\main.cpp(12): error C2143: syntax error : missing ';' before '<class-head>'
+     1>c:\users\user\documents\visual studio 2010\projects\dz2sem\main.cpp(12): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+     1>c:\users\user\documents\visual studio 2010\projects\dz2sem\main.cpp(15): error C2146: syntax error : missing ';' before identifier 'filetype'
+     1>c:\users\user\documents\visual studio 2010\projects\dz2sem\main.cpp(15): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+     1>c:\users\user\documents\visual studio 2010\projects\dz2sem\main.cpp(15): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+     1>c:\users\user\documents\visual studio 2010\projects\dz2sem\main.cpp(64): error C2143: syntax error : missing ';' before '&'
+     1>c:\users\user\documents\visual studio 2010\projects\dz2sem\main.cpp(64): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+     1>c:\users\user\documents\visual studio 2010\projects\dz2sem\main.cpp(64): error C2061: syntax error : identifier 'Vector'
+     1>c:\users\user\documents\visual studio 2010\projects\dz2sem\main.cpp(65): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+     1>c:\users\user\documents\visual studio 2010\projects\dz2sem\main.cpp(90): fatal error C1075: end of file found before the left brace '{' at 'c:\users\user\documents\visual studio 2010\projects\dz2sem\main.cpp(12)' was matched
+         File.cpp
+     1>c:\users\user\documents\visual studio 2010\projects\dz2sem\file.h(4): error C2146: syntax error : missing ';' before identifier 'filename'
+     1>c:\users\user\documents\visual studio 2010\projects\dz2sem\file.h(4): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+     1>c:\users\user\documents\visual studio 2010\projects\dz2sem\file.h(4): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+     1>c:\users\user\documents\visual studio 2010\projects\dz2sem\file.h(5): error C2146: syntax error : missing ';' before identifier 'filecreator'
+     1>c:\users\user\documents\visual studio 2010\projects\dz2sem\file.h(5): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+     1>c:\users\user\documents\visual studio 2010\projects\dz2sem\file.h(5): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+     1>c:\users\user\documents\visual studio 2010\projects\dz2sem\file.h(6): error C2146: syntax error : missing ';' before identifier 'filetype'
+     1>c:\users\user\documents\visual studio 2010\projects\dz2sem\file.h(6): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+     1>c:\users\user\documents\visual studio 2010\projects\dz2sem\file.h(6): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+     1>c:\users\user\documents\visual studio 2010\projects\dz2sem\file.h(11): error C2061: syntax error : identifier 'string'
+     1>c:\users\user\documents\visual studio 2010\projects\dz2sem\file.h(11): error C2535: 'File::File(void)' : member function already defined or declared
+                 c:\users\user\documents\visual studio 2010\projects\dz2sem\file.h(9) : see declaration of 'File::File'
+     1>c:\users\user\documents\visual studio 2010\projects\dz2sem\file.h(13): error C2146: syntax error : missing ';' before identifier 'getname'
+     1>c:\users\user\documents\visual studio 2010\projects\dz2sem\file.h(13): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+     1>c:\users\user\documents\visual studio 2010\projects\dz2sem\file.h(13): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+     1>c:\users\user\documents\visual studio 2010\projects\dz2sem\file.h(13): warning C4183: 'getname': missing return type; assumed to be a member function returning 'int'
+     1>c:\users\user\documents\visual studio 2010\projects\dz2sem\file.h(14): error C2146: syntax error : missing ';' before identifier 'getcreator'
+     1>c:\users\user\documents\visual studio 2010\projects\dz2sem\file.h(14): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+     1>c:\users\user\documents\visual studio 2010\projects\dz2sem\file.h(14): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+     1>c:\users\user\documents\visual studio 2010\projects\dz2sem\file.h(14): warning C4183: 'getcreator': missing return type; assumed to be a member function returning 'int'
+     1>c:\users\user\documents\visual studio 2010\projects\dz2sem\file.h(15): error C2146: syntax error : missing ';' before identifier 'gettype'
+     1>c:\users\user\documents\visual studio 2010\projects\dz2sem\file.h(15): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+     1>c:\users\user\documents\visual studio 2010\projects\dz2sem\file.h(15): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+     1>c:\users\user\documents\visual studio 2010\projects\dz2sem\file.h(15): warning C4183: 'gettype': missing return type; assumed to be a member function returning 'int'
+     1>c:\users\user\documents\visual studio 2010\projects\dz2sem\file.h(17): error C2061: syntax error : identifier 'string'
+     1>c:\users\user\documents\visual studio 2010\projects\dz2sem\file.h(18): error C2061: syntax error : identifier 'string'
+     1>c:\users\user\documents\visual studio 2010\projects\dz2sem\file.h(19): error C2061: syntax error : identifier 'string'
+     1>c:\users\user\documents\visual studio 2010\projects\dz2sem\file.h(21): error C2143: syntax error : missing ';' before '&'
+     1>c:\users\user\documents\visual studio 2010\projects\dz2sem\file.h(21): error C2433: 'ostream' : 'friend' not permitted on data declarations
+     1>c:\users\user\documents\visual studio 2010\projects\dz2sem\file.h(21): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+     1>c:\users\user\documents\visual studio 2010\projects\dz2sem\file.h(21): error C2061: syntax error : identifier 'ostream'
+     1>c:\users\user\documents\visual studio 2010\projects\dz2sem\file.h(21): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+     1>c:\users\user\documents\visual studio 2010\projects\dz2sem\file.h(21): error C2805: binary 'operator <<' has too few parameters
+     1>d:\vs\vc\include\codeanalysis\sourceannotations.h(29): error C2628: 'File' followed by 'unsigned' is illegal (did you forget a ';'?)
+     1>d:\vs\vc\include\codeanalysis\sourceannotations.h(29): error C2628: 'File' followed by 'int' is illegal (did you forget a ';'?)
+     1>d:\vs\vc\include\codeanalysis\sourceannotations.h(29): error C2347: '__w64' : can not be used with type '__w64 File'
+     1>d:\vs\vc\include\codeanalysis\sourceannotations.h(29): error C2371: 'size_t' : redefinition; different basic types
+                 c:\users\user\documents\visual studio 2010\projects\dz2sem\predefined c++ types (compiler internal)(19) : see declaration of 'size_t'
+     1>c:\users\user\documents\visual studio 2010\projects\dz2sem\file.cpp(5): error C2761: '{ctor}' : member function redeclaration not allowed
+     1>c:\users\user\documents\visual studio 2010\projects\dz2sem\file.cpp(6): error C2447: '{' : missing function header (old-style formal list?)
+     1>c:\users\user\documents\visual studio 2010\projects\dz2sem\file.cpp(12): error C2511: 'File::File(std::string,std::string,std::string,int)' : overloaded member function not found in 'File'
+                 c:\users\user\documents\visual studio 2010\projects\dz2sem\file.h(3) : see declaration of 'File'
+     1>c:\users\user\documents\visual studio 2010\projects\dz2sem\file.cpp(23): error C2511: 'void File::setname(std::string)' : overloaded member function not found in 'File'
+                 c:\users\user\documents\visual studio 2010\projects\dz2sem\file.h(3) : see declaration of 'File'
+     1>c:\users\user\documents\visual studio 2010\projects\dz2sem\file.cpp(24): error C2653: 'Home' : is not a class or namespace name
+     1>c:\users\user\documents\visual studio 2010\projects\dz2sem\file.cpp(24): error C2355: 'this' : can only be referenced inside non-static member functions
+     1>c:\users\user\documents\visual studio 2010\projects\dz2sem\file.cpp(24): error C2227: left of '->EtagCount' must point to class/struct/union/generic type
+     1>c:\users\user\documents\visual studio 2010\projects\dz2sem\file.cpp(25): error C2653: 'Home' : is not a class or namespace name
+     1>c:\users\user\documents\visual studio 2010\projects\dz2sem\file.cpp(25): error C2355: 'this' : can only be referenced inside non-static member functions
+     1>c:\users\user\documents\visual studio 2010\projects\dz2sem\file.cpp(25): error C2227: left of '->MenCount' must point to class/struct/union/generic type
+     1>c:\users\user\documents\visual studio 2010\projects\dz2sem\file.cpp(26): error C2653: 'Home' : is not a class or namespace name
+     1>c:\users\user\documents\visual studio 2010\projects\dz2sem\file.cpp(26): error C2355: 'this' : can only be referenced inside non-static member functions
+     1>c:\users\user\documents\visual studio 2010\projects\dz2sem\file.cpp(26): error C2227: left of '->NumbApartament' must point to class/struct/union/generic type
+     1>c:\users\user\documents\visual studio 2010\projects\dz2sem\file.cpp(28): error C2653: 'Home' : is not a class or namespace name
+     1>c:\users\user\documents\visual studio 2010\projects\dz2sem\file.cpp(28): error C2065: 'iHome' : undeclared identifier
+     1>c:\users\user\documents\visual studio 2010\projects\dz2sem\file.cpp(29): error C2653: 'Home' : is not a class or namespace name
+     1>c:\users\user\documents\visual studio 2010\projects\dz2sem\file.cpp(30): error C2653: 'Home' : is not a class or namespace name
+     1>c:\users\user\documents\visual studio 2010\projects\dz2sem\file.cpp(31): error C2653: 'Home' : is not a class or namespace name
+     1>c:\users\user\documents\visual studio 2010\projects\dz2sem\file.cpp(32): error C2872: 'ostream' : ambiguous symbol
+                 could be 'c:\users\user\documents\visual studio 2010\projects\dz2sem\file.h(21) : int ostream'
+                 or       'd:\vs\vc\include\iosfwd(636) : std::ostream'
+     1>c:\users\user\documents\visual studio 2010\projects\dz2sem\file.cpp(32): error C2143: syntax error : missing ';' before '&'
+     1>c:\users\user\documents\visual studio 2010\projects\dz2sem\file.cpp(32): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+     1>c:\users\user\documents\visual studio 2010\projects\dz2sem\file.cpp(32): error C2086: 'int ostream' : redefinition
+                 c:\users\user\documents\visual studio 2010\projects\dz2sem\file.h(21) : see declaration of 'ostream'
+     1>c:\users\user\documents\visual studio 2010\projects\dz2sem\file.cpp(32): error C2872: 'ostream' : ambiguous symbol
+                 could be 'c:\users\user\documents\visual studio 2010\projects\dz2sem\file.h(21) : int ostream'
+                 or       'd:\vs\vc\include\iosfwd(636) : std::ostream'
+     1>c:\users\user\documents\visual studio 2010\projects\dz2sem\file.cpp(32): error C2872: 'ostream' : ambiguous symbol
+                 could be 'c:\users\user\documents\visual studio 2010\projects\dz2sem\file.h(21) : int ostream'
+                 or       'd:\vs\vc\include\iosfwd(636) : std::ostream'
+     1>c:\users\user\documents\visual studio 2010\projects\dz2sem\file.cpp(32): error C2065: 'output' : undeclared identifier
+     1>c:\users\user\documents\visual studio 2010\projects\dz2sem\file.cpp(32): error C2065: 'Home' : undeclared identifier
+     1>c:\users\user\documents\visual studio 2010\projects\dz2sem\file.cpp(32): error C2065: 'H' : undeclared identifier
+     1>c:\users\user\documents\visual studio 2010\projects\dz2sem\file.cpp(32): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+     1>c:\users\user\documents\visual studio 2010\projects\dz2sem\file.cpp(32): fatal error C1903: unable to recover from previous error(s); stopping compilation
+         Generating Code...
+     1>Done Building Project "c:\Users\user\documents\visual studio 2010\Projects\dz2sem\dz2sem.vcxproj" (build target(s)) -- FAILED.
+
+Build FAILED.
+
+Time Elapsed 00:00:03.97

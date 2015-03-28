@@ -7,7 +7,7 @@ Cat::Cat()
 	catname=kolfile=catsize=0;
 	bool cattype=true;
 }
-Cat::Cat(string name, int kol, bool type, int size, File *data)
+Cat::Cat(const Cat& name, int kol, bool type, int size, File *data)
 {
 	this->catname=name;
     bool cattype=type;

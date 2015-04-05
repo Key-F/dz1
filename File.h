@@ -8,16 +8,16 @@ class File
 	int timeofcr;//время создания
 	int timeofmod;//время последней модификации
 public:
+	File(const File& name, const File& creator, const File& type, int size, int timeofcr, int timeofmod);
 	File();
 	File(const File &Fl);// создание файла по типу другого
-	File(const File& name, const File& creator, const File& type, int size, int timeofcr, int timeofmod);
 	~File();// удаление файла
-	string getname()const;
-	string getcreator()const;
-	string gettype()const;
-	int getsize()const;
-	int gettimec()const;
-	int gettimem()const;
+	File& getname(File&)const;
+	File& getcreator(File&)const;
+	File& gettype(File&)const;
+	int getsize(File&)const;
+	int gettimec(File&)const;
+	int gettimem(File&)const;
 	void setname(File& name);
 	void setcreator(File& creator);
 	void settype(File& type);

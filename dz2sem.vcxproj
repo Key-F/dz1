@@ -81,7 +81,6 @@
   <ItemGroup>
     <ClInclude Include="Cat.h" />
     <ClInclude Include="File.h" />
-    <ClInclude Include="stdafx.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

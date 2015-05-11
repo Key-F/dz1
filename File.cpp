@@ -4,8 +4,8 @@
 #include <string>
 #include <algorithm>
 
-File::File(const File& name, const File& type,
-      const File& creator, int size, int timec, int timem) {
+File::File(const string& name, const string& type,
+      const string& creator, int size, int timec, int timem) {
     this->filename = name;
     this->filetype = type;
     this->filecreator = creator;
@@ -15,9 +15,9 @@ File::File(const File& name, const File& type,
 }
 
 File::File() {
-    filename = NULL;
-    filetype = NULL;
-    filecreator = NULL;
+    filename = "Nothing";
+    filetype = "Nothing";
+    filecreator = "Nothing";
     filesize = NULL;
     timeofmod = NULL;
     timeofcr = NULL;
@@ -35,11 +35,11 @@ File::File(const File &Fl) {
 File::~File() {
 }
 
-void File::setname(File& x) {
+void File::setname(const string& x) {
     this->filename = x;
 }
 
-void File::settype(File& x) {
+void File::settype(const string& x) {
     this->filetype = x;
 }
 
@@ -47,7 +47,7 @@ void File::setsize(int x) {
     this->filesize = x;
 }
 
-void File::setcreator(File& x) {
+void File::setcreator(const string& x) {
     this->filecreator = x;
 }
 
@@ -59,11 +59,11 @@ void File::settimem(int x) {
     this->timeofmod = x;
 }
 
-File& File::getname() const {
+const string& File::getname() const {
     return filename;
 }
 
-File& File::gettype() const {
+const string& File::gettype() const {
     return filetype;
 }
 
@@ -71,7 +71,7 @@ int File::getsize() const {
     return filesize;
 }
 
-File& File::getcreator() const {
+const string& File::getcreator() const {
     return filecreator;
 }
 
@@ -91,7 +91,7 @@ std::ostream &operator<<(std::ostream &stream, File &H) {
 }
 
 File File::operator=(const File & Fl) {
-    File.swap(*this);
+    File::swap(*this);
     return *this;
 }
 

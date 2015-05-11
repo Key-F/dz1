@@ -10,9 +10,9 @@ Cat::Cat() {
     catname = "Nothing";
     kolfile = NULL;
     catsize = NULL;
-    cattype = "Unknown";
+    cattype = "Nothing";
 }
-Cat::Cat(const Cat& name, int kol, const Cat& type,
+Cat::Cat(const string& name, int kol, const string& type,
        int size, std::vector <File> F) {
     this->catname = name;
     this->cattype = type;
@@ -31,11 +31,11 @@ int Cat::countsize(std::vector <File> F) {
     return sum;
 }
 
-void Cat::addfile(File& Fl) {
+void Cat::addfile(const File& Fl) {
     F.push_back(Fl);
 }
 
-void Cat::delfile(File& Fl) {
+void Cat::delfile(const File& Fl) {
     int k;
     for (int i = 0; i < F.size(); i++)
         if (F[i] == Fl) {
@@ -46,7 +46,7 @@ void Cat::delfile(File& Fl) {
     if (k == 0) std::cout << "File not found";
 }
 Cat Cat::operator=(const Cat &Ct) {
-    Cat.swap(*this);
+    Cat::swap(*this);
     return *this;
 }
 
@@ -66,7 +66,7 @@ void Cat::swap(Cat & Ct) {
      std::swap(catsize, Ct.catsize);
      std::swap(F, Ct.F);
 }
-Cat& Cat::getname() const {
+const string& Cat::getname() const {
     return catname;
 }
 
@@ -74,7 +74,7 @@ int Cat::getkol() const {
     return kolfile;
 }
 
-Cat& Cat::getttype() const {
+const string& Cat::getttype() const {
     return cattype;
 }
 
@@ -82,7 +82,7 @@ int Cat::getsize() const {
     return catsize;
 }
 
-void Cat::setname(Cat& name) {
+void Cat::setname(const string& name) {
     this->catname = name;
 }
 
@@ -90,7 +90,7 @@ void Cat::setkol(int kolfile) {
     this->kolfile = kolfile;
 }
 
-void Cat::settype(Cat& type) {
+void Cat::settype(const string& type) {
     this->cattype = type;
 }
 

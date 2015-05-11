@@ -6,6 +6,8 @@
 #include <string>
 #include <algorithm>
 
+using std::string;
+
 class File {
     string filename;
     string filecreator;
@@ -15,20 +17,20 @@ class File {
     int timeofmod;  // time of last modification
 
  public:
-     File(const File& name, const File& creator,
-         const File& type, int size, int timeofcr, int timeofmod);
+     File(const string& name, const string& creator,
+         const string& type, int size, int timeofcr, int timeofmod);
      File();
      File(const File &Fl);
      ~File();
-     File& getname() const;
-     File& getcreator() const;
-     File& gettype() const;
+     const string& getname() const;
+     const string& getcreator() const;
+     const string& gettype() const;
      int getsize() const;
      int gettimec() const;
      int gettimem() const;
-     void setname(const File& name);
-     void setcreator(const File& creator);
-     void settype(const File& type);
+     void setname(const string& name);
+     void setcreator(const string& creator);
+     void settype(const string& type);
      void setsize(int size);
      void settimec(int timec);
      void settimem(int timem);
@@ -36,4 +38,4 @@ class File {
      File operator=(const File &);
      bool operator==(const File &);
      void swap(File& Fl);
-}
+};

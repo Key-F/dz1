@@ -7,6 +7,8 @@
 #include <vector>
 #include <algorithm>
 
+using std::string;
+using std::vector;
 class Cat {
     string catname;
     int kolfile;
@@ -17,16 +19,16 @@ class Cat {
  public:
      Cat();
      Cat(const Cat &Ct);
-     Cat(const Cat& name, int kol, const Cat& type,
+     Cat(const string& name, int kol, const string& type,
          int size, std::vector <File> F);
      ~Cat();
-     Cat& getname() const;
+     const string& getname() const;
      int getkol() const;
-     Cat& getttype() const;
+     const string& getttype() const;
      int getsize() const;
-     void setname(const Cat& name);
+     void setname(const string& name);
      void setkol(int kolfile);
-     void settype(const Cat& type);
+     void settype(const string& type);
      void setsize(int size);
      void setdata(std::vector <File> F);
      void addfile(const File& FL);
@@ -38,4 +40,4 @@ class Cat {
      Cat operator=(const Cat &);
      Cat operator+(const Cat &);
      void swap(Cat& Ct);
-}
+};

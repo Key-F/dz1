@@ -18,7 +18,6 @@ class Cat {
 
  public:
      Cat();
-     Cat(const Cat &Ct);
      Cat(const string& name, int kol, const string& type,
          int size, std::vector <File> F);
      ~Cat();
@@ -26,7 +25,7 @@ class Cat {
      int getkol() const;
      const string& getttype() const;
      int getsize() const;
-     const std::vector <File>& getdata();
+     const std::vector <File>& getdata() const;
      void setname(const string& name);
      void setkol(int kolfile);
      void settype(const string& type);
@@ -39,7 +38,7 @@ class Cat {
      friend std::ostream &operator<<(std::ostream &output, Cat &H);
      File operator[](int i);
      Cat operator=(const Cat &);
-     bool operator==(const Cat &);
+     bool operator==(const Cat &) const;
      Cat operator+(const Cat &);
      void swap(Cat& Ct);
 };

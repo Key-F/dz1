@@ -51,7 +51,7 @@ Cat Cat::operator=(const Cat &Ct) {
     return *this;
 }
 
-bool Cat::operator==(const Cat & Ct) {
+bool Cat::operator==(const Cat & Ct) const {
     if (this->getdata() == F)
         return true;
     else
@@ -76,7 +76,7 @@ void Cat::swap(Cat & Ct) {
      std::swap(F, Ct.F);
 }
 
-const std::vector <File>& Cat::getdata() {
+const std::vector <File>& Cat::getdata() const {
     return F;
 }
 

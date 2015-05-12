@@ -26,6 +26,7 @@ class Cat {
      int getkol() const;
      const string& getttype() const;
      int getsize() const;
+     const std::vector <File>& getdata();
      void setname(const string& name);
      void setkol(int kolfile);
      void settype(const string& type);
@@ -38,6 +39,7 @@ class Cat {
      friend std::ostream &operator<<(std::ostream &output, Cat &H);
      File operator[](int i);
      Cat operator=(const Cat &);
+     bool operator==(const Cat &);
      Cat operator+(const Cat &);
      void swap(Cat& Ct);
 };

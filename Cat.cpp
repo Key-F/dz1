@@ -36,19 +36,28 @@ void Cat::addfile(const File& Fl) {
 }
 
 void Cat::delfile(const File& Fl) {
-    int k;
-    for (int i = 0; i < F.size(); i++)
-        if (F[i] == Fl) {
-             F.erase(i);
+    int k = 0;
+    for (vector <File>::iterator i = F.begin(); i != F.end(); i++)
+        if (*i == Fl) {
+            F.erase(i);
             std::cout << "File was deleted";
             k++;
         }
     if (k == 0) std::cout << "File not found";
 }
+
 Cat Cat::operator=(const Cat &Ct) {
     Cat::swap(*this);
     return *this;
 }
+
+bool Cat::operator==(const Cat & Ct) {
+    if (this->getdata() == F)
+        return true;
+    else
+        return false;
+}
+
 
 File Cat::operator[](int i) {
     return F[i];
@@ -66,6 +75,11 @@ void Cat::swap(Cat & Ct) {
      std::swap(catsize, Ct.catsize);
      std::swap(F, Ct.F);
 }
+
+const std::vector <File>& Cat::getdata() {
+    return F;
+}
+
 const string& Cat::getname() const {
     return catname;
 }

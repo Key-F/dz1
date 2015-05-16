@@ -95,7 +95,7 @@ File File::operator=(const File & Fl) {
     return *this;
 }
 
-bool File::operator==(const File & Fl) {
+bool File::operator==(const File & Fl) const {
     if (this->filesize == Fl.getsize())
         return true;
     else
